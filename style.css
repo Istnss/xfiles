@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#begin{
+    font-family: "Sintony", sans-serif;
+    position: relative;
+    background-color: #111010;
+    color: aliceblue;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    word-spacing: 0.5em;
+    cursor: url(img/abduction.png), auto;
+}
+#h1Text {
+    transition: opacity 0.4s ease-in-out; /* Adicionando transição para a opacidade do texto */
+    margin-top: 4em;
+}
+#linkThere{
+    position: relative;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 4em;
+    margin-left: 0.5em;
+    z-index: 2;
+}
+#linkThere:hover{
+    font-weight: 600;
+    text-decoration: underline;
+}
+#imgBg{
+    position: absolute; /* Alterado para posicionar absolutamente em relação ao pai .begin */
+    left: 0;
+    top: 0;
+    width: 100%; /* Alterado para ocupar 100% da largura do pai .begin */
+    height: 100%; /* Alterado para ocupar 100% da altura do pai .begin */
+    opacity: 0; /* Adicionado para definir a opacidade desejada */
+    z-index: 1; /* Colocado atrás do conteúdo (.begin) que tem z-index padrão 0 */
+    transition: opacity 0.7s ease-in
+}
+/* */
+nav{
+    background-color: #16131a;
+    text-align: right;
+    font-size:1em;
+    word-spacing: 2em; 
+    padding: 0.5em 3em;
+}
+nav li{
+    display: inline;
+}
+nav a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.buttonDarkMode ul{
+    list-style: none;
+    margin-right: 1em;
+    margin-top: 1em;
+}
+input[type="checkbox"]{
+    display: none;
+}
+.infos{
+    max-width: 100%;
+    height: auto;
+}
+#bgHome{
+    width: 100%;
+    height: auto;
+}
+.description{
+    font-family: 'Cormorant';
+    color: #F0F8FF;
+    align-items: center;
+    font-size: 3cap;
+}
+#title, #genre, #created, #starring{
+    position: absolute;
+    background-color: #5b120b; 
+    left: 4rem;
+    padding: 6px 10px;
+
+}
+#title{
+    top:14em;
+}
+#genre{
+    top: 18em;
+}
+#created{
+    top:20em;
+}
+#starring{
+    top: 22em;
+}
+/* SINOPSE */
+.sinopse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6em 2em;
+
+}
+.sinopse p{
+    font-size: 2cap;
+    text-align: justify;
+    margin: 4em;
+}
+span{
+    color: #930d01;
+    font-weight: 600;
+}
+
+/*  */
+.about{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: #2d3c5b;
+    color: aliceblue;
+    padding: 5em;
+    align-items: center;
+    text-align: center ;
+}
+.card{
+    padding: 14px 16px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.about h3{
+    margin: 1em;
+}
+.about p{
+    line-height: 1.5em;
+}
+
+
+/*  */
+.bio{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    padding: 2em;
+
+}
+.mulderPhotos{
+    height: 250px;
+}
+.scullyPhotos{
+    height: 300px;
+}
+.bio p{
+    font-size: 3cap;
+    margin: 3em;
+}
+.mulderQuote, .ScullyQuote{
+    font-size: 2cap;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+
+
+
+
+
+
+
+/*  */
+.galery{
+    background-color: #16131a;
+
+}
+
+
+
+
+/*Footer*/
+#copyright{
+    background-color: #263138;
+    color: #fff;
+    padding: 1.5em;
+    font-size: 1.1em;
+    text-align: center;
+    } 
+#copyright a{
+    color: #c6c6f3;
+}
+
+/*MEDIAS */
+@media screen and (min-width: 320px){
+    
+}
+@media screen and (min-width: 375px){
+    
+}
+
+@media screen and (max-width: 425px){
+    .description{
+        font-size: 1cap;
+    }
+    #title, #genre, #created, #starring{
+        padding: 2px;
+        left: 1rem;
+    }
+}
+@media screen and (min-width:768px){
+    .description{
+        font-size: 1.5cap;
+    }
+    #title, #genre, #created, #starring{
+        padding: 4px;
+    }
+}
+@media screen and (min-width:1024px){
+    .description{
+        font-size: 2cap;
+    }
+}
+@media screen and (min-width:1440px){
+    .description{
+        font-size: 3cap;
+    }  
+}
+@media screen and (min-width: 2560px){
+    .description{
+        font-size: 4cap;
+    }
+}
