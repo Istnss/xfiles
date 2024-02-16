@@ -100,7 +100,8 @@ input[type="checkbox"]{
 #starring{
     top: 22em;
 }
-/* SINOPSE */
+
+/* SINOPSE */ 
 .sinopse{
     display: flex;
     justify-content: center;
@@ -118,7 +119,7 @@ span{
     font-weight: 600;
 }
 
-/*  */
+/* */
 .about{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -127,6 +128,7 @@ span{
     padding: 5em;
     align-items: center;
     text-align: center ;
+    font-size: 1.2em;
 }
 .card{
     padding: 14px 16px;
@@ -147,6 +149,7 @@ span{
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
     padding: 2em;
+    font-size: 0.8em;
 
 }
 .mulderPhotos{
@@ -173,7 +176,7 @@ span{
 
 
 
-/*  */
+/*  
 .galery{
     background-color: #16131a;
 
@@ -184,25 +187,109 @@ span{
 
 /*Footer*/
 #copyright{
+    height: auto;
     background-color: #263138;
     color: #fff;
     padding: 1.5em;
-    font-size: 1.1em;
+    font-size: 1em;
     text-align: center;
     } 
 #copyright a{
     color: #c6c6f3;
 }
 
-/*MEDIAS */
-@media screen and (min-width: 320px){
-    
-}
-@media screen and (min-width: 375px){
-    
-}
 
-@media screen and (max-width: 425px){
+
+
+
+
+
+/*MEDIAS */
+
+
+
+
+
+
+@media screen and (min-width: 2560px){
+    .description{
+        font-size: 3.5cap;
+    }
+    .sinopse{
+       padding: 3em 2em ;
+    }
+    .sinopse p{
+        margin-left: 2em;
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width:1440px){
+    .description{
+        font-size: 2.5cap;
+    }
+    .sinopse p{
+        margin-left: 2em;
+        font-size: 1.2em;
+    }
+    .about, .mulder, .scully{
+        font-size: 0.8em;
+    }
+    .scullyPhotos, .mulderPhotos{
+        width: 300px;
+        height: auto;
+    }
+    #copyright{
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width:1024px){
+    .description{
+        font-size: 2cap;
+    }
+    .img-sinopse{
+        display: flex;
+        width: 440px;
+        height: 250px;
+    }
+    .sinopse{
+       padding: 1em 2em ;
+    }
+    .sinopse p{
+        margin-left: 2em;
+    }
+    .bio{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 7em;
+    }
+    .scullyPhotos, .mulderPhotos{
+        width: 400px;
+        height: auto;
+    }
+}
+@media screen and (max-width:768px){
+    .description{
+        font-size: 1.5cap;
+    }
+    #title, #genre, #created, #starring{
+        padding: 4px;
+    }
+    .sinopse{
+        display: grid;
+        grid-template-columns: 1fr;   
+    }
+    .img-sinopse{
+        margin-left: 9em;
+    }
+    .bio{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 2em;
+    }
+    .scullyPhotos, .mulderPhotos{
+        width: 300px;
+        height: auto;
+    }
+}
+@media (max-width: 500px){
     .description{
         font-size: 1cap;
     }
@@ -210,27 +297,45 @@ span{
         padding: 2px;
         left: 1rem;
     }
-}
-@media screen and (min-width:768px){
-    .description{
-        font-size: 1.5cap;
+    .about{
+        grid-template-columns: 1fr;
     }
-    #title, #genre, #created, #starring{
-        padding: 4px;
+    .sinopse p{
+        text-align: justify;
+        padding: 0;
+        margin: 1em;
+    }
+    .img-sinopse{
+        display: none;
+    }
+    .about{
+        padding: 1.5em;
+    }
+    .bio{
+        grid-template-columns: 1fr;
+    }
+    .scullyPhotos, .mulderPhotos{
+        margin-left: 2em;
+    }
+    .mulderQuote, .ScullyQuote{
+        font-size: 1.1em;
     }
 }
-@media screen and (min-width:1024px){
+@media (max-width: 375px){
     .description{
-        font-size: 2cap;
+        font-size: 0.5em;
+    }
+    .sinopse p{
+        font-size: 1em;
+    }
+    .scullyPhotos, .mulderPhotos{
+        width: 250px;
+        height: auto;
     }
 }
-@media screen and (min-width:1440px){
-    .description{
-        font-size: 3cap;
-    }  
-}
-@media screen and (min-width: 2560px){
-    .description{
-        font-size: 4cap;
+@media (max-width: 320px){
+
+    .scullyPhotos, .mulderPhotos{
+        margin: 0;
     }
 }
