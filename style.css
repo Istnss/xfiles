@@ -171,16 +171,84 @@ span{
 
 
 
-
-
-
-
-
-/*  
-.galery{
-    background-color: #16131a;
-
+.inf{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #111010;
+    align-items: center;
+    text-align: center;
+    padding: 6em 2em;
 }
+
+
+
+
+/*  */
+.galery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    background-color: #111010;
+    align-items: center;
+    text-align: center;
+    padding: 3em 8em;
+}
+.galery img{
+    width: calc(90% - 10px);
+    height: auto;
+}
+
+
+/**/
+#quiz{
+    background-color: #F0F8FF;
+    line-height: 2em;
+    border-radius: 10px;
+    padding: 2em;
+}
+#question{
+    font-weight: 400;
+}
+
+#options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.option, #restartButton{
+    width: calc(50% - 10px); /* 50% do espaço disponível menos a margem entre as opções */
+    margin-bottom: 10px; /* Ajuste conforme necessário */
+    color: aliceblue;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 12px;
+}
+.option{
+    background-color: #5b120b;
+}
+.option:hover{
+    background-color: #2D6752;
+    font-weight: 600;
+    color: #111010;
+}
+.option:hover, #restartButton{
+    cursor: pointer;
+}
+#restartButton{
+    background-color: #2D6752;
+    margin-left: 10em;
+    color: aliceblue;
+}
+#restartButton:hover{
+    background-color: #5b120b;
+}
+
+
+
+
+
 
 
 
@@ -202,8 +270,6 @@ span{
 
 
 
-
-
 /*MEDIAS */
 
 
@@ -215,32 +281,69 @@ span{
     .description{
         font-size: 3.5cap;
     }
-    .sinopse{
-       padding: 3em 2em ;
-    }
+
     .sinopse p{
         margin-left: 2em;
         font-size: 1.5em;
     }
+    #quiz{
+        max-width: 50%;
+    }
+    .bio{
+        align-items: center;
+        padding: 4em 15em;
+    }
+
 }
-@media screen and (max-width:1440px){
+@media screen and (min-width:1440px){
     .description{
         font-size: 2.5cap;
+    }
+    .sinopse{
+        max-width: 100vw;
+        margin: 0 2em;
     }
     .sinopse p{
         margin-left: 2em;
         font-size: 1.2em;
     }
-    .about, .mulder, .scully{
+    .about{
+        font-size: 1em;
+    }
+    .mulder, .scully{
         font-size: 0.8em;
     }
     .scullyPhotos, .mulderPhotos{
         width: 300px;
         height: auto;
     }
+    .inf img{
+        width: 300px;
+    }
+    #quiz{
+        margin: 2em;
+    }
     #copyright{
         font-size: 0.8em;
+    } 
+}
+@media (width:1280px) {
+    .inf{
+        display: block
     }
+    #restartButton{
+        margin: 0 auto;
+    }
+    .bio{
+        padding: 2em;
+        margin: 0;
+        font-size: 0.5em;
+    }
+    .bio img{
+        width: 300px;
+        height: auto;
+    }
+    
 }
 @media screen and (max-width:1024px){
     .description{
@@ -261,9 +364,33 @@ span{
         grid-template-columns: repeat(2, 1fr);
         margin-left: 7em;
     }
+    .about{
+        font-size: 0.8em;
+    }
     .scullyPhotos, .mulderPhotos{
         width: 400px;
-        height: auto;
+        height: 300px;
+    }
+    .inf{
+        display: block;
+    }
+    .trailer{
+        width: 560px;
+        height: 315px;
+    }
+    #quiz{
+        margin: 5em;
+        margin-bottom: 0;
+    }
+}
+@media (width: 820px){
+    .bio{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 1em;
+        padding: 0;
+    }
+    .mulderPhotos, .scullyPhotos{
+        width: 380px;
     }
 }
 @media screen and (max-width:768px){
@@ -287,6 +414,33 @@ span{
     .scullyPhotos, .mulderPhotos{
         width: 300px;
         height: auto;
+    }
+    
+    .trailer,  .inf img{
+        width: calc(50% - 10px)
+    }
+    .quiz{
+        margin: 0;
+        padding: 0;
+    }
+    .galery{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+@media (max-width: 540px){
+    .bio{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 1em;
+        padding: 0;
+    }
+    .mulderPhotos, .scullyPhotos{
+        width: 250px;
+    }
+    .mulderQuote{
+        display: block;
+        padding: 0 2em;
+        margin: 0;
     }
 }
 @media (max-width: 500px){
@@ -315,7 +469,34 @@ span{
         grid-template-columns: 1fr;
     }
     .scullyPhotos, .mulderPhotos{
-        margin-left: 2em;
+        margin-left: 1em;
+    }
+    .mulderQuote, .ScullyQuote{
+        font-size: 1.1em;
+    }
+    .trailer{
+        display: none;
+    }
+    .inf{
+        width: 100%;
+        padding: 0;
+        line-height: 1em;
+    }
+    #quiz{
+        margin: 0 1em;
+        padding-bottom: 2em;
+    }
+    .galery{
+        grid-template-columns: 1fr;
+        padding: 1em 0;
+    }
+    .galery img{
+        width: 250px;
+    }
+}
+@media (max-width: 440px){
+    .scullyPhotos, .mulderPhotos{
+        margin-left: 5em;
     }
     .mulderQuote, .ScullyQuote{
         font-size: 1.1em;
@@ -332,10 +513,27 @@ span{
         width: 250px;
         height: auto;
     }
+    .bio p{
+        font-size: 1.3em;
+        margin: 0 1.5em;
+        padding: 1em 0;
+    }
+    
 }
 @media (max-width: 320px){
-
+    .bio{
+        margin: 1em;
+    }
     .scullyPhotos, .mulderPhotos{
         margin: 0;
     }
+    #quiz{
+        padding: 1em;
+    }
+    #options {
+        padding: 1em;
+    }
+
+    
 }
+

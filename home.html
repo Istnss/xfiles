@@ -16,11 +16,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">Galery</a></li>
-                <li id="darkmode">
-                    <input type="checkbox" id="dark-mode-toggle">
-                    <label for="dark-mode-toggle"><img src="img/iconmoon.svg" alt="icon moon" id="nightmode" width="20px" height="auto" style="cursor: pointer"></label>
-                </li>
+                <li><a href="#gallery">Gallery</a></li>
             </ul>
         </nav>
     </header>
@@ -71,8 +67,7 @@
                     1998: Best drama series - The X-Files <br>
                 </p>
             </div>
-        </section>
-                
+        </section>         
         <section class="mulder">
             <div class="bio">
                 <div>
@@ -115,8 +110,58 @@
                 <p> The truth is <span>out there</span>, but so are lies.</p>
             </div>
         </section>
-        <section class="galery">
-            a
+        <section class="moreInfo">
+            <div class="inf">
+                <div>
+                    <iframe class="trailer" width="560" height="315" src="https://www.youtube.com/embed/v6EkU3ZezLY?si=al_CiReZLJy9x_Vt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                </div>
+                <div>
+                    <img src="img/X-files.png">
+                </div>
+                <div id="quiz">
+                    <h2> Quiz X - files</h2>
+                    <h3 id="question">What is the name of the pilot episode of the series The X-Files?</h3>
+                    <div id="options">
+                        <button class="option" onclick="checkAnswer('The Truth')">The Truth</button>
+                        <button class="option" onclick="checkAnswer('Pilot')">Pilot</button>
+                        <button class="option" onclick="checkAnswer('The Beginning')">The Beginning</button>
+                        <button class="option" onclick="checkAnswer('The X-Files')">The X-Files</button>
+                    </div>
+                    <p id="result"></p>
+                    <button id="restartButton" onclick="restartQuiz()" style="display: none;">Reiniciar</button>
+                </div>                
+            <div>                  
+        </section>
+        <section id="gallery">
+            <div class="galery">
+                <div>
+                    <img src="img/one.jpeg" alt="" loading="lazy">
+                </div>
+                <div>
+                    <img src="img/two.jpeg" alt="" loading="lazy">
+                </div>
+                <div>
+                    <img src="img/three.jpeg" alt="" loading="lazy">
+                </div>
+                <div>
+                    <img src="img/four.jpeg" alt="" loading="lazy">
+                </div>
+                <div>
+                    <img src="img/five.jpeg" alt="" loading="lazy">
+                </div>
+                <div>
+                    <img src="img/six.jpeg" alt="" loading="lazy">
+                </div>
+                <div>
+                    <img src="img/seven.gif" alt="" loading="lazy">
+                </div>
+                <div>
+                    <img src="img/eight.gif" alt="" loading="lazy">
+                </div>
+                <div>
+                    <img src="img/nine.gif" alt="" loading="lazy">
+                </div>
+            </div>  
         </section>
     </main>
     <footer>
@@ -128,6 +173,5 @@
         </div>
     </footer>
     <script src="index.js"></script>
-
 </body>
 </html>
