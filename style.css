@@ -44,7 +44,6 @@
     z-index: 1; /* Colocado atrás do conteúdo (.begin) que tem z-index padrão 0 */
     transition: opacity 0.7s ease-in
 }
-/* */
 nav{
     background-color: #16131a;
     text-align: right;
@@ -86,7 +85,6 @@ input[type="checkbox"]{
     background-color: #5b120b; 
     left: 4rem;
     padding: 6px 10px;
-
 }
 #title{
     top:14em;
@@ -100,14 +98,11 @@ input[type="checkbox"]{
 #starring{
     top: 22em;
 }
-
-/* SINOPSE */ 
 .sinopse{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 6em 2em;
-
 }
 .sinopse p{
     font-size: 2cap;
@@ -118,8 +113,6 @@ span{
     color: #930d01;
     font-weight: 600;
 }
-
-/* */
 .about{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -141,16 +134,12 @@ span{
 .about p{
     line-height: 1.5em;
 }
-
-
-/*  */
 .bio{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
     padding: 2em;
     font-size: 0.8em;
-
 }
 .mulderPhotos{
     height: 250px;
@@ -168,9 +157,6 @@ span{
     text-align: center;
     margin-bottom: 2em;
 }
-
-
-
 .inf{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -179,11 +165,6 @@ span{
     text-align: center;
     padding: 6em 2em;
 }
-
-
-
-
-/*  */
 .galery{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -197,9 +178,6 @@ span{
     width: calc(90% - 10px);
     height: auto;
 }
-
-
-/**/
 #quiz{
     background-color: #F0F8FF;
     line-height: 2em;
@@ -209,14 +187,12 @@ span{
 #question{
     font-weight: 400;
 }
-
 #options {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 2em;
 }
-
 .option, #restartButton{
     width: calc(50% - 10px); /* 50% do espaço disponível menos a margem entre as opções */
     margin-bottom: 10px; /* Ajuste conforme necessário */
@@ -244,16 +220,6 @@ span{
 #restartButton:hover{
     background-color: #5b120b;
 }
-
-
-
-
-
-
-
-
-
-/*Footer*/
 #copyright{
     height: auto;
     background-color: #263138;
@@ -265,18 +231,6 @@ span{
 #copyright a{
     color: #c6c6f3;
 }
-
-
-
-
-
-/*MEDIAS */
-
-
-
-
-
-
 @media screen and (min-width: 2560px){
     .description{
         font-size: 3.5cap;
@@ -293,7 +247,6 @@ span{
         align-items: center;
         padding: 4em 15em;
     }
-
 }
 @media screen and (min-width:1440px){
     .description{
@@ -343,7 +296,6 @@ span{
         width: 300px;
         height: auto;
     }
-    
 }
 @media screen and (max-width:1024px){
     .description{
@@ -426,7 +378,6 @@ span{
     .galery{
         grid-template-columns: repeat(2, 1fr);
     }
-
 }
 @media (max-width: 540px){
     .bio{
@@ -518,7 +469,6 @@ span{
         margin: 0 1.5em;
         padding: 1em 0;
     }
-    
 }
 @media (max-width: 320px){
     .bio{
@@ -533,7 +483,5 @@ span{
     #options {
         padding: 1em;
     }
-
-    
 }
 
