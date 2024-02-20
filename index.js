@@ -7,20 +7,15 @@ document.addEventListener('DOMContentLoaded', function(){
     linkThere.addEventListener("mouseover", function() {
         setOpacity(h1text, 0);
         setOpacity(imgBg, 0.3);
-
     });
-
     linkThere.addEventListener("mouseout", function() {
         setOpacity(h1text, 1);
         setOpacity(imgBg, 0);
-
     });
     function setOpacity(element, opacityValue) {
         element.style.opacity = opacityValue;
     }
 });
-
-
 document.addEventListener('DOMContentLoaded', function () {
     showSlide(currentSlide);
 
@@ -35,18 +30,8 @@ document.addEventListener('DOMContentLoaded', function () {
         nextSlide();
     });
 });
-
-
-
-
-
-
-
-
-
 var currentQuestion = 0;
 var score = 0;
-
 var questions = [
     {
         question: "What is the name of the pilot episode of the series The X-Files?",
