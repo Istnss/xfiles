@@ -17,3 +17,6 @@ To use this tribute page, simply clone the repository to your local machine:
 
 Usage<br>
 Once you have cloned the repository, open the index.html file in a web browser to view the tribute page. From there, you can navigate through the various sections, interact with the content, and immerse yourself in the world of "The X-Files".
+
+For an enhanced experience, use a computer:<br>
+<a href="https://thexfiles.vercel.app"> Click here to visit the website. </a>
